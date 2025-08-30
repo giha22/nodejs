@@ -4,7 +4,7 @@ import { io } from "../app.js";
 
 const router = Router();
 
-const pm = new productsManager("./src/data/products.json");
+const pm = new productsManager("./data/products.json");
 
 router.get("/", async (req, res) => {
     const products = await pm.getProducts();
